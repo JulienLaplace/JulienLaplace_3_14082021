@@ -197,6 +197,7 @@
         background-color: white;
         text-decoration: none;
         color: black;
+        position: relative;
     }
 
     .carte-res img {
@@ -242,15 +243,24 @@
     }
 
     /* -- TEST -- */
-    
-    .position {
-        position: absolute;
+
+    .container-rect {
+        display: flex;
+        justify-content: flex-end;
     }
 
     .rect {
-        width:400px;
-        height:200px;
-        background-color:#069;
+        width: 90px;
+        height: 35px;
+        background:#99E2D0;
+        color: #11775e;
+        font-weight: bold;
         position: absolute;
+        border-radius: 5px;
         z-index: 999;
-}
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        
+    }
