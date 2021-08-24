@@ -104,6 +104,13 @@
         font-weight: lighter;
     }
 
+    .inline {
+        width:80%;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
     .prix {
         float: right;
         margin-top: -27px;
