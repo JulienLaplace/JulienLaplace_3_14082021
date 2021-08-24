@@ -1,4 +1,4 @@
- 
+
     * {
         margin:0;
         padding: 0;
@@ -17,14 +17,19 @@
         height: 75px;
         display: flex;
         align-items: center;
-        background: white;
-        padding-right: 30px;
+        width:100%;
+        position: relative;
+        justify-content: center;
     }
     
     .back {
         display: flex;
-        justify-content: space-evenly;
-        padding-right: 30px;
+        justify-content: center;
+    }
+
+    .icone {
+        position:absolute;
+        left:20px;
     }
 
     .logo
