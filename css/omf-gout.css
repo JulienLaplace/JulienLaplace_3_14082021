@@ -1,4 +1,4 @@
-        * {
+    * {
         margin:0;
         padding: 0;
         box-sizing: border-box;
@@ -16,16 +16,19 @@
         height: 75px;
         display: flex;
         align-items: center;
-        background: white;
-        z-index: 999;
+        width:100%;
+        position: relative;
         justify-content: center;
-        padding-right: 30px;
     }
     
     .back {
         display: flex;
-        justify-content: space-evenly;
-        padding-right: 30px;
+        justify-content: center;
+    }
+
+    .icone {
+        position:absolute;
+        left:20px;
     }
 
     .logo
@@ -113,7 +116,7 @@
     
     /* -- SECTION COMMANDER -- */
 
-    .container-button {
+    /* .container-button {
         display:flex;
         justify-content: center;
         align-items: center;
@@ -133,8 +136,8 @@
         font-size: 13px;
         font-weight: bold;
         cursor:pointer;
-    }
-
+    } */
+    
     /* -- FOOTER -- */
     
     footer {
