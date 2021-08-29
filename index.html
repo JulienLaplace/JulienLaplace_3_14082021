@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>French Food</title>
+    <title>Oh My Food</title>
     <link rel="stylesheet" href="css/omf-index.css" />
     <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <!-- FONT AWESOME-->
     <script src="https://kit.fontawesome.com/884426581f.js" crossorigin="anonymous"></script>
     <!-- POLICE RALEWAY-->
@@ -13,9 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <!-- POLICE SHRIKAND -->
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <!-- RESPONSIVE -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta />
 </head>
 
 <body>
@@ -31,8 +34,8 @@
     <!-- SECTION LIEU -->
 
     <section class="lieu">
-        <div class="container-lieu">
-            <div class="map">
+        <div class="lieu__container">
+            <div class="lieu__map">
                 <i class="fas fa-map-marker-alt"></i>
                 <p class="pad-left-10">Paris, Belleville</p>
             </div>
@@ -42,18 +45,18 @@
     <!-- SECTION EXPLORER-->
 
     <section>
-        <div class="background">
+        <div class="explore__background">
             <div class="explore">
-                <div class="explore">
-                    <h2 class="">
-                        Réservez le menu qui vous convient
-                    </h2>
-                    <h4 class="pad-top-10 light">
-                        Découvrez des restaurants d'exception, séléctionnés par nos soins
-                    </h4>
-                </div>
+
+                <h2 class="">
+                    Réservez le menu qui vous convient
+                </h2>
+                <h4 class="pad-top-10 light">
+                    Découvrez des restaurants d'exception, séléctionnés par nos soins
+                </h4>
+
             </div>
-            <div class="container-button">
+            <div class="container__button">
                 <div class="button">
                     <p>Explorer nos restaurants</p>
                 </div>
@@ -62,51 +65,51 @@
 
     <!-- SECTION FONCTIONNEMENT-->
 
-    <section>
-        <div class="container-fon">
+    <main>
+        <div class="fon__container">
             <h2 class="pad-left-10 pad-bottom-20">Fonctionnement</h2>
-            <div class="container-button-fon">
+            <div class="fon__container__button">
                 <div class="pad-left-10"></div>
-                <div class="icone">1</div>
-                <div class="button-fon">
-                    <i class="fas fa-mobile-alt grey"></i>
+                <div class="fon__icone">1</div>
+                <div class="fon__button">
+                    <i class="fas fa-mobile-alt fon__grey"></i>
                     <p class="pad-left-10">Choisissez un restaurant</p>
                 </div>
             </div>
-            <div class="container-button-fon">
+            <div class="fon__container__button">
                 <div class="pad-left-10"></div>
-                <div class="icone">2</div>
-                <div class="button-fon">
-                    <i class="fas fa-list-ul grey"></i>
+                <div class="fon__icone">2</div>
+                <div class="fon__button">
+                    <i class="fas fa-mobile-alt fon__grey"></i>
                     <p class="pad-left-10">Composez votre menu</p>
                 </div>
             </div>
-            <div class="container-button-fon">
+            <div class="fon__container__button">
                 <div class="pad-left-10"></div>
-                <div class="icone">3</div>
-                <div class="button-fon">
-                    <i class="fas fa-store grey"></i>
+                <div class="fon__icone">3</div>
+                <div class="fon__button">
+                    <i class="fas fa-mobile-alt fon__grey"></i>
                     <p class="pad-left-10">Dégustez au restaurant</p>
                 </div>
             </div>
         </div>
         </div>
-    </section>
+    </main>
 
     <!-- SECTION RESTAURANT -->
 
-    <section>
-        <div class="background">
+    <aside class="restaurant">
+        <div class="restaurant__background">
             <h2 class="pad-left-10 pad-bottom-10">Restaurants</h2>
-            <div class="container-res">
-                <div class="carte-res ">
+            <div class="restaurant__container">
+                <div class="carte-restaurant">
                     <a href="menu-gout.html">
-                        <div class="container-rect">
-                            <div class="rect">
+                        <div class="carte-restaurant__container-rect">
+                            <div class="carte-restaurant__rect">
                                 Nouveau
                             </div>
                         </div>
-                        <img src="img/image1.jpg" alt="ménilmontant">
+                        <img class="carte-restaurant__img" src="img/image1.jpg" alt="ménilmontant">
                         <h3 class="pad-left-10 pad-top-10">La palette du goût</h3>
                         <i class="far fa-heart icone-heart fa-lg "></i>
                         <p class="pad-left-10 pad-top-10">
@@ -115,15 +118,15 @@
                     </a>
                 </div>
             </div>
-            <div class="container-res">
-                <div class="carte-res">
+            <div class="restaurant__container">
+                <div class="carte-restaurant">
                     <a href="menu-note.html">
-                        <div class="container-rect">
-                            <div class="rect">
+                        <div class="carte-restaurant__container-rect">
+                            <div class="carte-restaurant__rect">
                                 Nouveau
                             </div>
                         </div>
-                        <img src="img/image2.jpg" alt="charonne">
+                        <img class="carte-restaurant__img" src="img/image2.jpg" alt="charonne">
                         <h3 class="pad-left-10 pad-top-10">La note enchantée</h3>
                         <i class="far fa-heart icone-heart fa-lg"></i>
                         <p class="pad-left-10 pad-top-10">
@@ -132,10 +135,11 @@
                     </a>
                 </div>
             </div>
-            <div class="container-res">
-                <div class="carte-res">
+            <div class="restaurant__container">
+                <div class="carte-restaurant">
                     <a href="menu-french.html">
-                        <img src="img/image3.jpg" alt="cité rouge">
+                        <img class="carte-restaurant__img" class="carte-restaurant__img" src="img/image3.jpg"
+                            alt="cité rouge">
                         <h3 class="pad-left-10 pad-top-10">À la française</h3>
                         <i class="far fa-heart icone-heart fa-lg"></i>
                         <p class="pad-left-10 pad-top-10">
@@ -144,10 +148,10 @@
                     </a>
                 </div>
             </div>
-            <div class="container-res">
-                <div class="carte-res">
+            <div class="restaurant__container">
+                <div class="carte-restaurant">
                     <a href="menu-sens.html">
-                        <img src="img/image4.jpg" alt="méricourt">
+                        <img class="carte-restaurant__img" src="img/image4.jpg" alt="méricourt">
                         <h3 class="pad-left-10 pad-top-10">Le délice des sens</h3>
                         <i class="far fa-heart icone-heart fa-lg"></i>
                         <p class="pad-left-10 pad-top-10">
@@ -157,25 +161,25 @@
                 </div>
             </div>
         </div>
-    </section>
+    </aside>
 
     <!-- FOOTER-->
 
-    <footer class="background-footer">
-        <div>
-            <h3 class="logo-footer">ohmyfood</h3>
-            <div id="container-footer">
-                <div class="white pad-top-10">
+    <footer class="footer__background">
+        <div class="">
+            <h3 class="footer__logo">ohmyfood</h3>
+            <div id="footer__container">
+                <div class="footer__white pad-top-10">
                     <i class="fas fa-utensils"></i>
                     <h3 class="pad-left-10">Proposer un restaurant</h3>
                 </div>
-                <div class="white pad-top-10">
+                <div class="footer__white pad-top-10">
                     <i class="fas fa-hands-helping"></i>
                     <h3 class="pad-left-5 ">Devenir partenaire</h3>
                 </div>
                 <div>
-                    <h3 class="white pad-top-10">Mentions légales</h3>
-                    <h3 class="white pad-top-10">contact</h3>
+                    <h3 class="footer__white pad-top-10">Mentions légales</h3>
+                    <h3 class="footer__white pad-top-10">contact</h3>
                 </div>
             </div>
         </div>
