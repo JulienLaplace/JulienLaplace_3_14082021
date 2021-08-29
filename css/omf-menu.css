@@ -21,17 +21,17 @@
         justify-content: center;
     }
     
-    .back {
+    .header__back {
         display: flex;
         justify-content: center;
     }
 
-    .icone {
+    .header__icone {
         position:absolute;
         left:20px;
     }
 
-    .logo
+    .header__logo
     {
         width: 40%;
     }
@@ -46,7 +46,7 @@
 
     /* -- SECTION MENU --*/
 
-    .background {
+    .menu__background {
         background-color: #F2F2F2;
         margin-top: -50px;
         width: 100%;
@@ -54,14 +54,14 @@
         padding: 20px 20px 30px 20px;
     }
 
-    .container-menu {
+    .menu__contenair {
         display: flex;
         flex-direction: column;
         padding-bottom: 30px;
         padding-top: 20px;
     }
 
-    .title {
+    .menu__title {
         font-family: Shrikhand;
         font-size: 27px;
         padding-left: 5px;
@@ -73,7 +73,7 @@
         padding-right: 30px;
     }
 
-    .mid-title {
+    .menu__title__mid {
         font-weight: normal;
         border-bottom:solid medium #99E2D0;
         width: 45px;
@@ -81,14 +81,14 @@
         margin-left: 5px;
     }
     
-    .container-button-menu {
+    .menu__container__button {
         display: flex;
         flex-direction: column;
         height: 90px;
         padding-top: 15px;
     }
 
-    .button-menu {
+    .menu__button {
         padding-top: 10px;
         width: 100%;
         height: 70px;
@@ -99,18 +99,18 @@
         font-weight: bold;
     }
 
-    .inline {
+    .menu__inline {
         width:80%;
         overflow:hidden;
         text-overflow:ellipsis;
         white-space:nowrap;
     }
 
-    .small {
+    .menu__small {
         font-weight: lighter;
     }
 
-    .prix {
+    .menu__prix {
         float: right;
         margin-top: -27px;
         padding-right: 25px;
@@ -123,7 +123,7 @@
     
     /* -- SECTION COMMANDER -- */
 
-    .container-button {
+    .container__button {
         display:flex;
         justify-content: center;
         align-items: center;
@@ -147,27 +147,27 @@
     
     /* -- FOOTER -- */
     
-    footer {
+    .footer {
         height: 220px;
         padding: 20px;
     }
 
-    .background-footer {
+    .footer__background {
         background-color:rgb(36, 36, 36);
     }
 
-    #container-footer {
+    #footer__container {
         display: flex;
         flex-direction: column;
         width: 77%;
     }
 
-    .white {
+    .footer__white {
         display: flex;
         color: white;
     }
 
-    .logo-footer {
+    .footer__logo {
         font-family: Shrikhand;
         color: white;
         padding-bottom: 10px;
@@ -180,7 +180,7 @@
         padding-bottom: 10px;
     }
 
-    .pad-menu {
+    .menu__pad {
         padding-left: 10px;
         padding-bottom: 10px;
     }
