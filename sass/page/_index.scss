@@ -1,0 +1,84 @@
+    .container-lieu
+    {
+        height: 50px;
+        background: #ece7e7;
+        display: flex;
+        justify-content: center;
+        box-shadow: inset 0px 8px 14px -6px #aaa;
+    }
+
+    .map
+    {
+        padding-top: 15px;
+        display: flex;
+        color: grey;
+        font-weight: 600;
+    }
+    
+    .pad-left-5 {
+        padding-left: 5px;
+    }
+
+    .pad-left-10 {
+        padding-left: 10px;
+    }
+
+    .pad-top-10 {
+        padding-top: 10px;
+    }
+
+    .explore {
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+
+    .bold {
+        display: flex;
+        justify-content: center;
+    }
+
+    .light {
+        text-align: center;
+        font-weight: lighter;
+        color: #aaa;
+    }
+
+    /* -- FONCTIONNEMENT -- */
+
+    .container-fon {
+        padding-left: 10px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+
+    .pad-bottom-20 {
+        padding-bottom: 20px;
+    }
+
+    .pad-bottom-30 {
+        padding-bottom: 30px;
+    }   
+
+    .container-button-fon {
+        display: flex;
+        align-items: center;
+        height: 90px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+    }
+        
+    .button-fon {
+        z-index: 99;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 95%;
+        height: 70px;
+        padding-left: 30px;
+        background-color: rgb(245, 245, 245);
+        box-shadow: 5px 5px 15px -5px #aaa;
+        border-radius: 25px;
+        font-size: 15px;
+        font-weight: bold;
+    }
