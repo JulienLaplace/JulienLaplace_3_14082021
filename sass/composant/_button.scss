@@ -1,11 +1,10 @@
-.container-button {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-  }
-  
-.button {
+.container__button {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+  &__button {
     z-index: 99;
     display: flex;
     justify-content: center;
@@ -18,22 +17,47 @@
     font-size: 13px;
     font-weight: bold;
     cursor:pointer;
+  }
+
 }
 
-.container-button-menu {
+.fon__container__button {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding-bottom: 20px;
+
+
+  &__button {
+    z-index: 99;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+    height: 70px;
+    padding-left: 30px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 5px 5px 15px -5px #aaa;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+.menu__container__button {
   display: flex;
   flex-direction: column;
   height: 90px;
   padding-top: 15px;
-}
 
-.button-menu {
-  padding-top: 10px;
-  width: 100%;
-  height: 70px;
-  background-color: white;
-  box-shadow: 5px 5px 15px -5px #aaa;
-  border-radius: 15px;
-  font-size: 15px;
-  font-weight: bold;
+  &__button {
+    padding-top: 10px;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 5px 5px 15px -5px #aaa;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }

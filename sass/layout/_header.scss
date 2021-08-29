@@ -5,19 +5,18 @@
     width:100%;
     position: relative;
     justify-content: center;
-}
 
-.back {
-    display: flex;
-    justify-content: center;
-}
+    &__back {
+        display: flex;
+        justify-content: center;
+    }
 
-.icone {
-    position:absolute;
-    left:20px;
-}
+    &__icone {
+        position:absolute;
+        left:20px;
+    }
 
-.logo
-{
-    width: 40%;
+    &__logo {
+        width: 40%;
+    }
 }

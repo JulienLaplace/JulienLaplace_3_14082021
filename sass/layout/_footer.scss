@@ -1,26 +1,27 @@
 footer {
     height: 220px;
     padding: 20px;
-}
 
-.background-footer {
-    background-color:rgb(36, 36, 36);
-}
+    &__background {
+        background-color:rgb(36, 36, 36);
+    }
 
-#container-footer {
-    display: flex;
-    flex-direction: column;
-    width: 77%;
-}
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 77%;
+    }
 
-.white {
-    display: flex;
-    color: white;
-}
+    &__logo {
+        font-family: Shrikhand;
+        color: white;
+        padding-bottom: 10px;
+        font-size: 17px;
+    }
 
-.logo-footer {
-    font-family: Shrikhand;
-    color: white;
-    padding-bottom: 10px;
-    font-size: 17px;
+    &__white {
+        display: flex;
+        color: white;
+    }
+
 }
