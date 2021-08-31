@@ -27,7 +27,7 @@
 
     <header>
         <div class="header">
-            <img class="logo" src="img/logo/omf.png" alt="logo" />
+            <img class="header__logo" src="img/logo/omf.png" alt="logo" />
         </div>
     </header>
 
@@ -37,27 +37,24 @@
         <div class="lieu__container">
             <div class="lieu__map">
                 <i class="fas fa-map-marker-alt"></i>
-                <p class="pad-left-10">Paris, Belleville</p>
+                <p class="lieu__texte">Paris, Belleville</p>
             </div>
         </div>
     </section>
 
     <!-- SECTION EXPLORER-->
 
-    <section>
-        <div class="explore__background">
+    <section class="explore__container">
             <div class="explore">
-
-                <h2 class="">
+                <h2>
                     Réservez le menu qui vous convient
                 </h2>
-                <h4 class="pad-top-10 light">
+                <h4 class="light">
                     Découvrez des restaurants d'exception, séléctionnés par nos soins
                 </h4>
-
             </div>
-            <div class="container__button">
-                <div class="button">
+            <div class="explorer__container-button">
+                <div class="explorer__button">
                     <p>Explorer nos restaurants</p>
                 </div>
             </div>
@@ -67,29 +64,29 @@
 
     <main>
         <div class="fon__container">
-            <h2 class="pad-left-10 pad-bottom-20">Fonctionnement</h2>
-            <div class="fon__container__button">
+            <h2 class="fon__titre">Fonctionnement</h2>
+            <div class="fon__container-button">
                 <div class="pad-left-10"></div>
                 <div class="fon__icone">1</div>
                 <div class="fon__button">
                     <i class="fas fa-mobile-alt fon__grey"></i>
-                    <p class="pad-left-10">Choisissez un restaurant</p>
+                    <p class="fon__texte">Choisissez un restaurant</p>
                 </div>
             </div>
-            <div class="fon__container__button">
+            <div class="fon__container-button">
                 <div class="pad-left-10"></div>
                 <div class="fon__icone">2</div>
                 <div class="fon__button">
                     <i class="fas fa-mobile-alt fon__grey"></i>
-                    <p class="pad-left-10">Composez votre menu</p>
+                    <p class="fon__texte">Composez votre menu</p>
                 </div>
             </div>
-            <div class="fon__container__button">
+            <div class="fon__container-button">
                 <div class="pad-left-10"></div>
                 <div class="fon__icone">3</div>
                 <div class="fon__button">
                     <i class="fas fa-mobile-alt fon__grey"></i>
-                    <p class="pad-left-10">Dégustez au restaurant</p>
+                    <p class="fon__texte">Dégustez au restaurant</p>
                 </div>
             </div>
         </div>
@@ -100,7 +97,7 @@
 
     <aside class="restaurant">
         <div class="restaurant__background">
-            <h2 class="pad-left-10 pad-bottom-10">Restaurants</h2>
+            <h2 class="restaurant__titre">Restaurants</h2>
             <div class="restaurant__container">
                 <div class="carte-restaurant">
                     <a href="menu-gout.html">
@@ -110,9 +107,9 @@
                             </div>
                         </div>
                         <img class="carte-restaurant__img" src="img/image1.jpg" alt="ménilmontant">
-                        <h3 class="pad-left-10 pad-top-10">La palette du goût</h3>
-                        <i class="far fa-heart icone-heart fa-lg "></i>
-                        <p class="pad-left-10 pad-top-10">
+                        <h3 class="carte-restaurant__texte">La palette du goût</h3>
+                        <i class="far fa-heart index-heart fa-lg "></i>
+                        <p class="carte-restaurant__texte">
                             Ménilmontant
                         </p>
                     </a>
@@ -127,9 +124,9 @@
                             </div>
                         </div>
                         <img class="carte-restaurant__img" src="img/image2.jpg" alt="charonne">
-                        <h3 class="pad-left-10 pad-top-10">La note enchantée</h3>
+                        <h3 class="carte-restaurant__texte">La note enchantée</h3>
                         <i class="far fa-heart icone-heart fa-lg"></i>
-                        <p class="pad-left-10 pad-top-10">
+                        <p class="carte-restaurant__texte">
                             Charonne
                         </p>
                     </a>
@@ -140,9 +137,9 @@
                     <a href="menu-french.html">
                         <img class="carte-restaurant__img" class="carte-restaurant__img" src="img/image3.jpg"
                             alt="cité rouge">
-                        <h3 class="pad-left-10 pad-top-10">À la française</h3>
+                        <h3 class="carte-restaurant__texte">À la française</h3>
                         <i class="far fa-heart icone-heart fa-lg"></i>
-                        <p class="pad-left-10 pad-top-10">
+                        <p class="carte-restaurant__texte">
                             Cité Rouge
                         </p>
                     </a>
@@ -152,9 +149,9 @@
                 <div class="carte-restaurant">
                     <a href="menu-sens.html">
                         <img class="carte-restaurant__img" src="img/image4.jpg" alt="méricourt">
-                        <h3 class="pad-left-10 pad-top-10">Le délice des sens</h3>
+                        <h3 class="carte-restaurant__texte">Le délice des sens</h3>
                         <i class="far fa-heart icone-heart fa-lg"></i>
-                        <p class="pad-left-10 pad-top-10">
+                        <p class="carte-restaurant__texte">
                             Folie-Méricourt
                         </p>
                     </a>
@@ -168,18 +165,18 @@
     <footer class="footer__background">
         <div class="">
             <h3 class="footer__logo">ohmyfood</h3>
-            <div id="footer__container">
-                <div class="footer__white pad-top-10">
+            <div class="footer__container">
+                <div class="footer__white">
                     <i class="fas fa-utensils"></i>
                     <h3 class="pad-left-10">Proposer un restaurant</h3>
                 </div>
-                <div class="footer__white pad-top-10">
+                <div class="footer__white">
                     <i class="fas fa-hands-helping"></i>
                     <h3 class="pad-left-5 ">Devenir partenaire</h3>
                 </div>
                 <div>
-                    <h3 class="footer__white pad-top-10">Mentions légales</h3>
-                    <h3 class="footer__white pad-top-10">contact</h3>
+                    <h3 class="footer__white">Mentions légales</h3>
+                    <h3 class="footer__white">contact</h3>
                 </div>
             </div>
         </div>
