@@ -1,6 +1,29 @@
-@import "./composant/button";
-@import "./composant/cart";
-@import "./page/index";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./utils/variables";
+@import 
+    "./utils/variables",
+    "./utils/fonctions",
+    "./utils/mixins",
+    "./utils/extends";
+
+/* @import
+  "./vendors/"; */
+
+
+// 3. Base stuff
+@import 
+    "./bases/base";
+
+// 4. Layout-related sections
+@import 
+    "./layouts/header",
+    "./layouts/footer";
+
+// 5. Composants
+@import 
+    "./composants/buttons",
+    "./composants/cards",
+    "./composants/heart";
+
+// 6. Page-specific styles
+@import 
+    "./pages/index",
+    "./pages/menu";
