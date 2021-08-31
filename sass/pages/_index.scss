@@ -1,0 +1,132 @@
+// SECTION LIEU
+
+.lieu {
+    &__container {
+        height: 50px;
+        background: #ece7e7;
+        display: flex;
+        justify-content: center;
+        box-shadow: inset 0px 8px 14px -6px #aaa;
+    }
+
+    &__map {
+        padding-top: 15px;
+        display: flex;
+        color: grey;
+        font-weight: 600;
+    }
+
+    &__texte {
+        padding-left:10px;
+    }
+}
+
+// SECTION EXPLORER
+
+.explore__container {
+    @include section-container (30px, 30px, 0px, 30px);
+}
+
+.explore {
+    text-align: center;
+}
+
+.button {
+    background: linear-gradient(-7deg, $primary-color, $secondary-color);
+}
+
+.fon__icone {
+    background-color: $primary-color;
+}
+
+.carte-restaurant__rect {
+    background: $tertiary-color; 
+}
+
+// SECTION FONCTIONNEMENT
+
+.fon {
+    
+    &__container {
+        padding-left: 10px;
+        padding-bottom: 30px;
+        padding-top: 20px;  
+    }
+    
+    &__titre {
+        padding-left:10px;
+        padding-bottom:20px;
+    }
+
+    &__container-button {
+        display: flex;
+        align-items: center;
+        height: 90px;
+        padding-bottom: 20px;
+    }
+
+    &__icone {
+        display: flex;
+        height: 25px;
+        width: 25px;
+        color: white;
+        background-color: #9356DC;
+        align-items: center;
+        border-radius: 35px;
+        justify-content: center;
+        position: absolute;
+        z-index: 999;
+    }
+
+    &__button {
+        z-index: 99;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 95%;
+        height: 70px;
+        padding-left: 30px;
+        background-color: rgb(245, 245, 245);
+        box-shadow: 5px 5px 15px -5px #aaa;
+        border-radius: 25px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    &__texte {
+        padding-left:10px;
+    }
+
+    &__grey {
+        color: grey;
+    }
+}
+
+// SECTION RESTAURANT 
+
+.restaurant { 
+
+    &__background {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        padding-top: 30px;
+        width: 100%;
+        border-radius: 0px;
+        margin-left: 0px;
+        padding-bottom: 40px;
+        padding: 30px 30px 30px 30px;
+    }
+
+    &__titre {
+        padding-left:10px;
+        padding-bottom:10px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
