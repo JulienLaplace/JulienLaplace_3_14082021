@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/omf-index.css" />
     <link rel="stylesheet" href="public/css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <!-- FONT AWESOME-->
-    <script src="https://kit.fontawesome.com/884426581f.js" crossorigin="anonymous"></script>
     <!-- POLICE RALEWAY-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <!-- RESPONSIVE -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta />
 </head>
 
 <body>
@@ -33,31 +30,31 @@
 
     <!-- SECTION LIEU -->
 
-    <section class="lieu">
+    <div class="lieu">
         <div class="lieu__container">
             <div class="lieu__map">
                 <i class="fas fa-map-marker-alt"></i>
                 <p class="lieu__texte">Paris, Belleville</p>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- SECTION EXPLORER-->
 
     <section class="explore__container">
-            <div class="explore">
-                <h2>
-                    Réservez le menu qui vous convient
-                </h2>
-                <h4 class="light">
-                    Découvrez des restaurants d'exception, séléctionnés par nos soins
-                </h4>
-            </div>
-            <div class="explorer__container-button">
-                <div class="explorer__button">
-                    <p>Explorer nos restaurants</p>
-                </div>
-            </div>
+        <div class="explore">
+            <h2>
+                Réservez le menu qui vous convient
+            </h2>
+            <h3 class="light">
+                Découvrez des restaurants d'exception, séléctionnés par nos soins
+            </h3>
+        </div>
+        <div class="explore__container-button">
+            <button class="explore__button">
+                Explorer nos restaurants
+            </button>
+        </div>
     </section>
 
     <!-- SECTION FONCTIONNEMENT-->
@@ -77,7 +74,7 @@
                 <div class="pad-left-10"></div>
                 <div class="fon__icone">2</div>
                 <div class="fon__button">
-                    <i class="fas fa-mobile-alt fon__grey"></i>
+                    <i class="fas fa-list-ul fon__grey"></i>
                     <p class="fon__texte">Composez votre menu</p>
                 </div>
             </div>
@@ -85,11 +82,10 @@
                 <div class="pad-left-10"></div>
                 <div class="fon__icone">3</div>
                 <div class="fon__button">
-                    <i class="fas fa-mobile-alt fon__grey"></i>
+                    <i class="fas fa-store fon__grey"></i>
                     <p class="fon__texte">Dégustez au restaurant</p>
                 </div>
             </div>
-        </div>
         </div>
     </main>
 
@@ -108,7 +104,9 @@
                         </div>
                         <img class="carte-restaurant__img" src="img/image1.jpg" alt="ménilmontant">
                         <h3 class="carte-restaurant__texte">La palette du goût</h3>
-                        <i class="far fa-heart index-heart fa-lg "></i>
+                        <i class="far fa-heart heart fa-lg ">
+                            <i class="fas fa-heart heart-color"></i>
+                        </i>
                         <p class="carte-restaurant__texte">
                             Ménilmontant
                         </p>
@@ -125,7 +123,9 @@
                         </div>
                         <img class="carte-restaurant__img" src="img/image2.jpg" alt="charonne">
                         <h3 class="carte-restaurant__texte">La note enchantée</h3>
-                        <i class="far fa-heart index-heart fa-lg"></i>
+                        <i class="far fa-heart heart fa-lg ">
+                            <i class="fas fa-heart heart-color"></i>
+                        </i>
                         <p class="carte-restaurant__texte">
                             Charonne
                         </p>
@@ -135,10 +135,11 @@
             <div class="restaurant__container">
                 <div class="carte-restaurant">
                     <a href="menu-french.html">
-                        <img class="carte-restaurant__img" class="carte-restaurant__img" src="img/image3.jpg"
-                            alt="cité rouge">
+                        <img class="carte-restaurant__img" src="img/image3.jpg" alt="cité rouge">
                         <h3 class="carte-restaurant__texte">À la française</h3>
-                        <i class="far fa-heart index-heart fa-lg"></i>
+                        <i class="far fa-heart heart fa-lg ">
+                            <i class="fas fa-heart heart-color"></i>
+                        </i>
                         <p class="carte-restaurant__texte">
                             Cité Rouge
                         </p>
@@ -150,7 +151,9 @@
                     <a href="menu-sens.html">
                         <img class="carte-restaurant__img" src="img/image4.jpg" alt="méricourt">
                         <h3 class="carte-restaurant__texte">Le délice des sens</h3>
-                        <i class="far fa-heart index-heart fa-lg"></i>
+                        <i class="far fa-heart heart fa-lg ">
+                            <i class="fas fa-heart heart-color"></i>
+                        </i>
                         <p class="carte-restaurant__texte">
                             Folie-Méricourt
                         </p>
@@ -176,11 +179,14 @@
                 </div>
                 <div>
                     <h3 class="footer__white">Mentions légales</h3>
-                    <h3 class="footer__white">contact</h3>
+                    <h3><a href="mailto:ohmyfood@mail.com" class="footer__white">contact</a></h3>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/884426581f.js" crossorigin="anonymous"></script>
 
 </body>
 
