@@ -129,3 +129,28 @@
     background: rgba(255, 255, 255, 0.25);
   }
 }
+
+//TEST
+.carte__check {
+    display:flex;
+    justify-content:flex-end;
+}
+
+.carte__icone-container {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 70px;
+    margin: -56px -1px 0px 0px;
+    background: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.fa-check-circle {
+    font-size: 30px;
+    color: white;
+    transform: rotate(1turn);
+    transition: transform 0.5s;
+}
