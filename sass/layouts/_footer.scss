@@ -11,10 +11,10 @@
     }
 
     &__logo {
-        font-family: Shrikhand;
+        font-family: $font-serif;
         color: white;
         padding-bottom: 10px;
-        font-size: 17px;
+        font-size: $font-size-med;
     }
 
     &__white {
@@ -22,7 +22,7 @@
         color: white;
         padding-top:10px;
     }
-
+    
     &__text-res {
         padding-left:10px;
     }
