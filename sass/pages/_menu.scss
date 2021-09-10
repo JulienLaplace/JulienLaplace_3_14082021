@@ -9,19 +9,19 @@
     height: 300px;
 } 
 
-#gout {
+.gout {
     background-image: url("../../img/image1.jpg");
 }
 
-#note {
+.note {
     background-image: url("../../img/image2.jpg");
 }
 
-#french {
+.french {
     background-image: url("../../img/image3.jpg");
 }
 
-#sens {
+.sens {
     background-image: url("../../img/image4.jpg");
 }
 
@@ -34,7 +34,7 @@
         margin-top: -50px;
         width: 100%;
         border-radius: 25px 25px 0px 0px;
-        padding: 20px 20px 30px 20px;
+        @include section-container (30px, 30px, 30px, 30px);
     }
 
     &__contenair {
@@ -49,10 +49,11 @@
     }
 
     &__title {
-        font-family: Shrikhand;
-        font-size: 27px;
+        font-family: $font-serif;
+        font-size: $font-size-max;
         padding-left: 5px;
         padding-bottom: 20px;
+        letter-spacing: 2px;
     }
 
     &__title__mid {
@@ -63,9 +64,12 @@
         padding-left:0px;
         margin-left: 5px;
     }
-    
+}
+
+.carte {
     &__container-button {
         display: flex;
+        
         flex-direction: column;
         height: 90px;
         padding-top: 15px;
@@ -80,6 +84,7 @@
         border-radius: 15px;
         font-size: 15px;
         font-weight: bold;
+        cursor: pointer;
     }
 
     &__inline {
@@ -97,7 +102,30 @@
 
     &__prix {
         float: right;
-        margin-top: -27px;
+        margin-top: -18px;
         padding-right: 25px;
+        margin-left: auto;
     }
+}
+
+.carte__button:hover {
+    box-shadow: $box-shadow-hover;
+  
+
+  &__button:hover::after {
+    opacity: 1;
+    transition: opacity 2s ease-in-out 0s;
+  }
+
+  &__button::after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.25);
+  }
 }
