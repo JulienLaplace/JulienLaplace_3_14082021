@@ -15,7 +15,7 @@
 
 html, body {
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Helvetica", "arial";
   font-size: 14px;
 }
 
@@ -29,10 +29,6 @@ h2 {
   padding-bottom: 10px;
 }
 
-/*p {
-    padding-left:10px;
-    padding-top:10px;
-}*/
 footer {
   height: 220px;
   padding: 20px;
@@ -67,7 +63,7 @@ footer {
   width: 77%;
 }
 .footer__logo {
-  font-family: Shrikhand;
+  font-family: "Shrikhand", "Jubilat", "Georgia";
   color: white;
   padding-bottom: 10px;
   font-size: 17px;
@@ -77,26 +73,56 @@ footer {
   color: white;
   padding-top: 10px;
 }
+.footer__text-res {
+  padding-left: 10px;
+}
+.footer__text-par {
+  padding-left: 5px;
+}
 
-.explorer__container-button {
+.explore__container-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 150px;
 }
-.explorer__button {
+.explore__button {
   z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55%;
-  height: 50px;
   background: linear-gradient(-7deg, #9356DC, #FF79DA);
   border-radius: 25px;
   color: #FFF;
   font-size: 13px;
   font-weight: bold;
   cursor: pointer;
+  border: none;
+}
+.explore__button {
+  position: relative;
+  padding: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px;
+  box-shadow: 0 5px 15px #787878;
+}
+.explore__button:hover {
+  box-shadow: 0 5px 15px #787878;
+}
+.explore__button:hover::after {
+  opacity: 1;
+}
+.explore__button::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.25);
+  transition: opacity 0.5s ease-in-out 0s;
 }
 
 .commander__container-button {
@@ -107,17 +133,39 @@ footer {
 }
 .commander__button {
   z-index: 99;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55%;
-  height: 50px;
   background: linear-gradient(-7deg, #9356DC, #FF79DA);
   border-radius: 25px;
   color: #FFF;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  border: none;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0 5px 15px #787878;
+  transition: box-shadow 0.5s ease-in-out 0s;
+}
+.commander__button:hover {
+  box-shadow: 0 5px 15px #787878;
+}
+.commander__button:hover::after {
+  opacity: 1;
+}
+.commander__button::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.25);
+  transition: opacity 0.5s ease-in-out 0s;
 }
 
 .carte-restaurant {
@@ -162,15 +210,31 @@ footer {
   margin: 20px;
 }
 
-.index-heart {
+.heart {
   float: right;
   padding-right: 30px;
+  position: relative;
+  -webkit-text-stroke: 1px white;
+  cursor: pointer;
 }
-
-.menu-heart {
-  float: right;
-  padding-top: 5px;
-  padding-right: 30px;
+.heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px white;
+}
+.heart:hover .heart-color {
+  opacity: 1;
+}
+.heart .heart-color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: inherit;
+  opacity: 0;
 }
 
 .lieu__container {
@@ -191,7 +255,7 @@ footer {
 }
 
 .explore__container {
-  padding: 30px 30px 0px 30px;
+  padding: 30px 30px 30px 30px;
 }
 
 .explore {
@@ -200,14 +264,6 @@ footer {
 
 .button {
   background: linear-gradient(-7deg, #9356DC, #FF79DA);
-}
-
-.fon__icone {
-  background-color: #9356DC;
-}
-
-.carte-restaurant__rect {
-  background: #99E2D0;
 }
 
 .fon__container {
@@ -247,9 +303,31 @@ footer {
   padding-left: 30px;
   background-color: whitesmoke;
   box-shadow: 5px 5px 15px -5px #aaa;
-  border-radius: 25px;
-  font-size: 15px;
+  border-radius: 15px;
+  font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
+}
+.fon__button:hover {
+  box-shadow: 0 5px 15px #787878;
+  background-color: #ff79d93d;
+  transition: opacity 2s ease-in-out 0s;
+}
+.fon:hover::after {
+  opacity: 1;
+  transition: opacity 2s ease-in-out 0s;
+  color: #efb0ff;
+}
+.fon::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  color: #efb0ff;
 }
 .fon__texte {
   padding-left: 10px;
@@ -265,7 +343,6 @@ footer {
   background-color: #F2F2F2;
   padding-top: 30px;
   width: 100%;
-  border-radius: 0px;
   margin-left: 0px;
   padding-bottom: 40px;
   padding: 30px 30px 30px 30px;
@@ -280,6 +357,31 @@ footer {
   justify-content: space-evenly;
 }
 
+.carte-restaurant_rect {
+  background: #99E2D0;
+}
+
+/*.carte-restaurant:hover {
+    box-shadow: 0 5px 15px #787878;
+
+
+  &:hover::after {
+    opacity: 1;
+    transition: opacity 2s ease-in-out 0s;
+  }
+
+  &::after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+} */
 .button {
   background: linear-gradient(-7deg, #9356DC, #FF79DA);
 }
@@ -289,19 +391,19 @@ footer {
   height: 300px;
 }
 
-#gout {
+.gout {
   background-image: url("../../img/image1.jpg");
 }
 
-#note {
+.note {
   background-image: url("../../img/image2.jpg");
 }
 
-#french {
+.french {
   background-image: url("../../img/image3.jpg");
 }
 
-#sens {
+.sens {
   background-image: url("../../img/image4.jpg");
 }
 
@@ -310,7 +412,7 @@ footer {
   margin-top: -50px;
   width: 100%;
   border-radius: 25px 25px 0px 0px;
-  padding: 20px 20px 30px 20px;
+  padding: 30px 30px 30px 30px;
 }
 .menu__contenair {
   display: flex;
@@ -322,10 +424,11 @@ footer {
   padding-bottom: 30px;
 }
 .menu__title {
-  font-family: Shrikhand;
+  font-family: "Shrikhand", "Jubilat", "Georgia";
   font-size: 27px;
   padding-left: 5px;
   padding-bottom: 20px;
+  letter-spacing: 2px;
 }
 .menu__title__mid {
   font-weight: normal;
@@ -335,13 +438,14 @@ footer {
   padding-left: 0px;
   margin-left: 5px;
 }
-.menu__container-button {
+
+.carte__container-button {
   display: flex;
   flex-direction: column;
   height: 90px;
   padding-top: 15px;
 }
-.menu__button {
+.carte__button {
   padding-top: 10px;
   width: 100%;
   height: 70px;
@@ -350,8 +454,9 @@ footer {
   border-radius: 15px;
   font-size: 15px;
   font-weight: bold;
+  cursor: pointer;
 }
-.menu__inline {
+.carte__inline {
   width: 80%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -359,13 +464,33 @@ footer {
   padding-left: 10px;
   padding-top: 5px;
 }
-.menu__small {
+.carte__small {
   font-weight: lighter;
 }
-.menu__prix {
+.carte__prix {
   float: right;
-  margin-top: -27px;
+  margin-top: -18px;
   padding-right: 25px;
+  margin-left: auto;
+}
+
+.carte__button:hover {
+  box-shadow: 0 5px 15px #787878;
+}
+.carte__button:hover__button:hover::after {
+  opacity: 1;
+  transition: opacity 2s ease-in-out 0s;
+}
+.carte__button:hover__button::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.25);
 }
 
 /*# sourceMappingURL=style.css.map */
