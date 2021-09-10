@@ -1,0 +1,29 @@
+.heart {
+    float: right;
+    padding-right: 30px;
+    position: relative;
+    -webkit-text-stroke: 1px white;
+    cursor:pointer;
+
+    &:hover {
+        background: linear-gradient($primary-color, $secondary-color);
+        background-clip:text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px white;
+    }
+    
+    &:hover .heart-color {
+        opacity: 1;
+    }
+
+    .heart-color {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(#9356DC, #FF79DA);
+        background-clip: inherit;
+        opacity: 0;
+    }
+} 
