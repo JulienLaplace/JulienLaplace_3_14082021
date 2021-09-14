@@ -1,0 +1,41 @@
+// DEGRADE
+
+@keyframes degrade {
+    from {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0%);
+    }
+}
+
+
+// COEUR
+@keyframes coeur {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+// LOADER
+
+@keyframes loader {
+    0% {
+        visibility:visible;
+    }
+}
+
+@keyframes custom-loading {
+    from { 
+        transform: rotate(0deg); 
+    }
+    
+    to { 
+        transform: rotate(360deg); 
+    }
+}
