@@ -4,30 +4,29 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    padding-top: 30px;
   }
 
   &__button {
-    z-index: 99;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(-7deg, $primary-color, $secondary-color);
     border-radius:$border-radius-med2;
     color: #FFF;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: $font-size-min;
+    font-weight: $font-bold;
     cursor:pointer;
     border: none;
-  }
-
-  &__button {
     position: relative;
     padding: 20px;
     background: linear-gradient(#FF79DA, #9356DC);
     border-radius: 30px;
     box-shadow: $box-shadow-hover;
+    @include transition(box-shadow);
   }
+
 
   &__button:hover {
     box-shadow: $box-shadow-hover;
@@ -57,7 +56,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 170px;
   }
 
   &__button {
@@ -70,10 +69,10 @@
     border-radius:$border-radius-med2;
     color: #FFF;
     font-size: $font-size-min;
-    font-weight: bold;
+    font-weight: $font-bold;
     cursor:pointer;
     border: none;
-    width: 200px;
+    width: 180px;
     padding: 20px;
     box-shadow: $box-shadow-hover;
     transition: box-shadow 0.5s ease-in-out 0s;
