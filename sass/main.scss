@@ -2,6 +2,7 @@
     "./utils/variables",
     "./utils/fonctions",
     "./utils/mixins",
+    "./utils/keyframes",
     "./utils/extends";
 
 /* @import
@@ -22,14 +23,10 @@
     "./composants/loader",
     "./composants/buttons",
     "./composants/cards",
-    "./composants/heart";
+    "./composants/heart",
+    "./composants/loader";
 
 // 6. Page-specific styles
 @import 
     "./pages/index",
-    "./pages/menu";   
-
-
-        
-
-
+    "./pages/menu";
