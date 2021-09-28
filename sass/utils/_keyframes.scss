@@ -11,8 +11,8 @@
     }
 }
 
-
 // COEUR
+
 @keyframes coeur {
     from {
         transform: scale(0);
@@ -24,18 +24,17 @@
 
 // LOADER
 
-@keyframes loader {
+@keyframes fondu {
     0% {
         visibility:visible;
     }
 }
 
-@keyframes custom-loading {
-    from { 
-        transform: rotate(0deg); 
+@keyframes apparition {
+    from {
+        transform: scale(0);
     }
-    
-    to { 
-        transform: rotate(360deg); 
+    to {
+        transform: scale(2);
     }
 }
