@@ -27,13 +27,11 @@
         transform: scale(0);
         //@include animation(coeur, 1.5s, $fill-mode:forwards);
         @include transition(all, 0.7s);
-        
     }
 } 
 
 .heart {
     float: right;
-    padding-right: 30px;
     position: relative;
     -webkit-text-stroke: 2px white;
     cursor:pointer;
