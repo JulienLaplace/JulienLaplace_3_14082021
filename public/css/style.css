@@ -16,21 +16,27 @@
     transform: scale(1);
   }
 }
-@keyframes loader {
+@keyframes fondu {
   0% {
     visibility: visible;
   }
 }
-@keyframes custom-loading {
+@keyframes apparition {
   from {
-    transform: rotate(0deg);
+    transform: scale(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(2);
   }
 }
 .light {
   padding-top: 10px;
+}
+
+.taille-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* @import
@@ -74,6 +80,10 @@ footer {
   position: relative;
   justify-content: center;
 }
+.header__max-contenair {
+  max-width: 1400px;
+  margin: auto;
+}
 .header__back {
   display: flex;
   justify-content: center;
@@ -88,6 +98,11 @@ footer {
 
 .footer__background {
   background-color: #242424;
+  padding: 30px 0px 30px 30px;
+}
+.footer__max-container {
+  max-width: 1400px;
+  margin: auto;
 }
 .footer__container {
   display: flex;
@@ -119,8 +134,8 @@ footer {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
-  cursor: none;
-  animation: loader 2.5s ease-in-out 0s none;
+  cursor: wait;
+  animation: fondu 2.5s ease-in-out 0s none;
 }
 .loader__container {
   position: absolute;
@@ -128,42 +143,14 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.loader__demo {
-  width: 200px;
-  margin: 0 auto;
-  position: relative;
-  text-align: justify;
-}
-.loader__custom-loading-spinner {
-  cursor: progress;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.loader__custom-loading-spinner::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10001;
-  overflow: hidden;
-  background: #0b0b0b;
-  opacity: 0.6;
-}
-.loader__custom-loading-spinner::after {
-  box-sizing: border-box;
-  z-index: 2;
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  margin: -25px 0 0 -25px;
-  border: 25px solid #9356DC;
-  border-top: 25px solid #FF79DA;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  animation: custom-loading 0.5s linear infinite;
+.loader__item {
+  font-family: "Shrikhand", "Jubilat", "Georgia";
+  font-size: 70px;
+  margin: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: apparition 2.5s ease-in-out 0s none;
 }
 
 .explore__container-button {
@@ -214,7 +201,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #F2F2F2;
   height: 170px;
+  padding-bottom: 50px;
 }
 .commander__button {
   z-index: 99;
@@ -301,6 +290,7 @@ footer {
 .carte {
   display: flex;
   min-width: 220px;
+  height: 95px;
   padding: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -338,6 +328,18 @@ footer {
   background: #99E2D0;
   transition: margin-right 0.5s ease-in-out 0s;
 }
+.carte:nth-child(3) {
+  animation-delay: 0, 3s;
+}
+.carte:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.carte:nth-child(5) {
+  animation-delay: 0.7s;
+}
+.carte:nth-child(6) {
+  animation-delay: 0.9s;
+}
 .carte .fa-check-circle {
   font-size: 27px;
   color: white;
@@ -352,18 +354,6 @@ footer {
 }
 .carte:hover .fa-check-circle {
   transform: rotate(1turn);
-}
-.carte:nth-child(3) {
-  animation-delay: 0, 3s;
-}
-.carte:nth-child(4) {
-  animation-delay: 0.3s;
-}
-.carte:nth-child(5) {
-  animation-delay: 0.5s;
-}
-.carte:nth-child(6) {
-  animation-delay: 0.6s;
 }
 
 .heart-index {
@@ -391,12 +381,11 @@ footer {
   background-clip: text;
   opacity: 0;
   transform: scale(0);
-  animation: coeur 1.5s ease-in-out 0s forwards;
+  transition: all 0.7s ease-in-out 0s;
 }
 
 .heart {
   float: right;
-  padding-right: 30px;
   position: relative;
   -webkit-text-stroke: 2px white;
   cursor: pointer;
@@ -431,8 +420,8 @@ footer {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
-  cursor: none;
-  animation: loader 2.5s ease-in-out 0s none;
+  cursor: wait;
+  animation: fondu 2.5s ease-in-out 0s none;
 }
 .loader__container {
   position: absolute;
@@ -440,42 +429,14 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.loader__demo {
-  width: 200px;
-  margin: 0 auto;
-  position: relative;
-  text-align: justify;
-}
-.loader__custom-loading-spinner {
-  cursor: progress;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.loader__custom-loading-spinner::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10001;
-  overflow: hidden;
-  background: #0b0b0b;
-  opacity: 0.6;
-}
-.loader__custom-loading-spinner::after {
-  box-sizing: border-box;
-  z-index: 2;
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  margin: -25px 0 0 -25px;
-  border: 25px solid #9356DC;
-  border-top: 25px solid #FF79DA;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  animation: custom-loading 0.5s linear infinite;
+.loader__item {
+  font-family: "Shrikhand", "Jubilat", "Georgia";
+  font-size: 70px;
+  margin: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: apparition 2.5s ease-in-out 0s none;
 }
 
 .lieu__container {
@@ -511,11 +472,15 @@ footer {
   background: linear-gradient(-7deg, #9356DC, #FF79DA);
 }
 
+.fon__max-container {
+  max-width: 1400px;
+  margin: auto;
+}
 .fon__container {
   padding: 30px 20px 30px 20px;
 }
 .fon__titre {
-  padding-left: 10px;
+  padding-left: 30px;
   padding-bottom: 20px;
 }
 .fon__container-button {
@@ -541,7 +506,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 95%;
+  width: 100%;
   height: 70px;
   padding-left: 30px;
   background-color: #f6f6f6;
@@ -569,27 +534,123 @@ footer {
   color: #9356DC;
 }
 
+.restaurant {
+  background-color: #F2F2F2;
+}
+.restaurant__max-container {
+  max-width: 1400px;
+  margin: auto;
+}
 .restaurant__background {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #F2F2F2;
-  padding-top: 30px;
   width: 100%;
   margin-left: 0px;
-  padding-bottom: 40px;
-  padding: 30px 30px 30px 30px;
+  padding-bottom: 30px;
 }
 .restaurant__titre {
-  padding-left: 10px;
-  padding-bottom: 10px;
+  padding: 30px 30px 0px 30px;
 }
 .restaurant__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
+/*-- TABLETTE --*/
+@media (max-width: 1199px) and (min-width: 768px) {
+  .fon__container {
+    display: flex;
+  }
+
+  .fon__container-button {
+    width: 31%;
+    margin-right: 30px;
+  }
+
+  .restaurant__background {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: space-around;
+    margin-right: -20px;
+  }
+
+  .restaurant__container {
+    width: 50%;
+  }
+
+  /*.menu__contenair {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .menu__contenair-responsive {
+      display: flex;
+  }
+
+   .menu__background {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  */
+  .carte {
+    min-width: 280px;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1200px) {
+  .fon__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fon__container-button {
+    width: 30%;
+  }
+
+  .restaurant__background {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: space-around;
+    margin-right: -20px;
+  }
+
+  .restaurant__container {
+    width: 50%;
+  }
+
+  .menu {
+    background-color: #F2F2F2;
+    margin-top: -50px;
+    border-radius: 25px 25px 0px 0px;
+    padding: 30px 30px 30px 30px;
+  }
+
+  .menu__max-contenair {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .menu__background {
+    display: flex;
+  }
+
+  .menu__part {
+    width: 33%;
+    padding-bottom: 0px;
+    padding-right: 30px;
+  }
+
+  .menu__contenair {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+  }
+}
 .button {
   background: linear-gradient(-7deg, #9356DC, #FF79DA);
 }
@@ -615,18 +676,11 @@ footer {
   background-image: url("../../img/image4.jpg");
 }
 
-.menu__background {
+.menu {
   background-color: #F2F2F2;
   margin-top: -50px;
-  width: 100%;
   border-radius: 25px 25px 0px 0px;
   padding: 30px 30px 30px 30px;
-}
-.menu__contenair {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 30px;
-  padding-top: 20px;
 }
 .menu__part {
   padding-bottom: 30px;
@@ -644,6 +698,12 @@ footer {
   padding-bottom: 5px;
   padding-left: 0px;
   margin-left: 5px;
+}
+.menu__dish-container {
+  flex: 1;
+  min-width: 340px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
