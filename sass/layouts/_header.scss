@@ -6,6 +6,11 @@
     position: relative;
     justify-content: center;
 
+    &__max-contenair {
+        max-width: 1400px;
+        margin: auto;
+    }
+
     &__back {
         display: flex;
         justify-content: center;
