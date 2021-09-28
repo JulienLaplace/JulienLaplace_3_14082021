@@ -2,6 +2,12 @@
 
     &__background {
         background-color:rgb(36, 36, 36);
+        @include section-container (30px, 0px, 30px, 30px);
+    }
+
+    &__max-container {
+        max-width: 1400px;
+        margin: auto;
     }
 
     &__container {
