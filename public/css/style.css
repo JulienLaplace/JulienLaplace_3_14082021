@@ -33,14 +33,6 @@
   padding-top: 10px;
 }
 
-.taille-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* @import
-  "./vendors/"; */
 * {
   margin: 0;
   padding: 0;
@@ -142,14 +134,16 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 }
-.loader__item {
+.loader__objet {
   font-family: "Shrikhand", "Jubilat", "Georgia";
   font-size: 70px;
   margin: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   animation: apparition 2.5s ease-in-out 0s none;
 }
 
@@ -158,6 +152,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .explore__button {
   z-index: 1;
@@ -253,6 +248,7 @@ footer {
   color: black;
   position: relative;
   transition: box-shadow 0.5s ease-in-out 0s;
+  margin-bottom: 30px;
 }
 .carte-restaurant__img {
   object-fit: cover;
@@ -329,7 +325,7 @@ footer {
   transition: margin-right 0.5s ease-in-out 0s;
 }
 .carte:nth-child(3) {
-  animation-delay: 0, 3s;
+  animation-delay: 0.3s;
 }
 .carte:nth-child(4) {
   animation-delay: 0.5s;
@@ -360,14 +356,13 @@ footer {
   float: right;
   padding-right: 30px;
   position: relative;
-  -webkit-text-stroke: 1.5px white;
   cursor: pointer;
+  font-weight: lighter;
 }
 .heart-index:hover {
   background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0px white;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .heart-index:hover .heart-color {
   opacity: 1;
@@ -378,7 +373,7 @@ footer {
   left: 0;
   top: 0;
   background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
   transform: scale(0);
   transition: all 0.7s ease-in-out 0s;
@@ -387,16 +382,14 @@ footer {
 .heart {
   float: right;
   position: relative;
-  -webkit-text-stroke: 2px white;
   cursor: pointer;
   padding-top: 5px;
   padding-bottom: 3px;
 }
 .heart:hover {
   background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0px white;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .heart:hover .heart-color {
   opacity: 1;
@@ -407,7 +400,7 @@ footer {
   left: 0;
   top: 0;
   background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
   transform: scale(0);
   transition: all 0.5s ease-in-out 0s;
@@ -428,14 +421,16 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 }
-.loader__item {
+.loader__objet {
   font-family: "Shrikhand", "Jubilat", "Georgia";
   font-size: 70px;
   margin: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   animation: apparition 2.5s ease-in-out 0s none;
 }
 
@@ -481,7 +476,6 @@ footer {
 }
 .fon__titre {
   padding-left: 30px;
-  padding-bottom: 20px;
 }
 .fon__container-button {
   display: flex;
@@ -494,6 +488,7 @@ footer {
   display: flex;
   height: 25px;
   width: 25px;
+  margin-left: -10px;
   color: white;
   background-color: #9356DC;
   align-items: center;
@@ -521,6 +516,9 @@ footer {
   box-shadow: 0 5px 15px #787878;
   background-color: #9256dc2c;
 }
+.fon__button:hover .fon__icone {
+  color: #9356DC;
+}
 .fon:hover {
   box-shadow: 0 5px 15px #787878;
 }
@@ -530,12 +528,10 @@ footer {
 .fon__icone {
   color: grey;
 }
-.fon__icone:hover {
-  color: #9356DC;
-}
 
 .restaurant {
   background-color: #F2F2F2;
+  padding-bottom: 30px;
 }
 .restaurant__max-container {
   max-width: 1400px;
@@ -567,8 +563,8 @@ footer {
   }
 
   .fon__container-button {
-    width: 31%;
-    margin-right: 30px;
+    width: 32%;
+    margin-right: 20px;
   }
 
   .restaurant__background {
@@ -583,22 +579,29 @@ footer {
     width: 50%;
   }
 
-  /*.menu__contenair {
-      display: flex;
-      flex-wrap: wrap;
-  }
-
-  .menu__contenair-responsive {
-      display: flex;
-  }
-
-   .menu__background {
-      display: flex;
-      flex-wrap: wrap;
-  }
-  */
   .carte {
     min-width: 280px;
+  }
+
+  .footer__background {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: unset;
+    width: 99%;
+  }
+
+  .footer__icone {
+    margin-top: 13px;
   }
 }
 @media (max-width: 1920px) and (min-width: 1200px) {
@@ -635,6 +638,10 @@ footer {
     margin: auto;
   }
 
+  .heart {
+    padding-right: 50px;
+  }
+
   .menu__background {
     display: flex;
   }
@@ -649,6 +656,27 @@ footer {
     display: flex;
     flex-direction: column;
     display: flex;
+  }
+
+  .footer__background {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: unset;
+    width: 99%;
+  }
+
+  .footer__icone {
+    margin-top: 13px;
   }
 }
 .button {
