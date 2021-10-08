@@ -70,6 +70,7 @@
         display: flex;
         height: 25px;
         width: 25px;
+        margin-left: -10px;
         color: white;
         background-color: $primary-color;
         align-items: center;
@@ -98,6 +99,10 @@
     &__button:hover {
         box-shadow: 0 5px 15px #787878;
         background-color: #9256dc2c;
+
+        .fon__icone {
+            color: $primary-color;
+        }
     }
 
     &:hover {
@@ -110,10 +115,6 @@
 
     &__icone {
         color:grey;
-    }
-    
-    &__icone:hover {
-        color: $primary-color;
     }
 }
 
