@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>French Food</title>
-    <link rel="stylesheet" href="css/omf-menu.css" />
+    <title>La palette du goût</title>
     <link rel="stylesheet" href="public/css/style.css" />
-    <link rel="stylesheet" href="public/css/responsive.css" />
+    <link rel="stylesheet" href="css/prefixed/style.css" />
     <!-- FONT AWESOME-->
     <script src="https://kit.fontawesome.com/884426581f.js" crossorigin="anonymous"></script>
     <!-- POLICE RALEWAY-->
@@ -20,10 +19,9 @@
 </head>
 
 <body>
-
     <!-- HEADER -->
 
-    <header>
+    <header class="header__max-contenair">
         <div class="header">
             <div class="header__back">
                 <a href="index.html">
@@ -40,147 +38,147 @@
         <div class="background-image french">
         </div>
     </div>
+
     <!-- SECTION MENUS -->
 
     <section>
-        <div class="menu__background">
-            <div class="menu__contenair">
-                <div class="menu__part">
-                    <h2 class="menu__title">La palette du goût
-                        <i class="far fa-heart heart fa-lg">
-                            <i class="fas fa-heart heart-color "></i>
-                        </i>
-                    </h2>
-                    <h3 class="menu__title__mid">ENTRÉES</h3>
-                    <div class="carte">
-                        <div class="carte__texte">
-                            <h4>Fricassée d'escargot</h4>
-                            <p>Au piment d'Espelette</p>
-                        </div>
-                        <p class="carte__prix">25€</p>
-                        <div class="carte__check">
-                            <div class="carte__icon-container">
-                                <i class="fas fa-check-circle"></i>
+        <div class="menu">
+            <div class="menu__max-contenair">
+                <h2 class="menu__title">La palette du goût
+                    <i class="far fa-heart heart fa-lg">
+                        <i class="fas fa-heart heart-color "></i>
+                    </i>
+                </h2>
+                <div class="menu__background">
+                    <div class="menu__part">
+                        <h3 class="menu__title__mid">ENTRÉES</h3>
+                        <div class="menu__contenair">
+                            <div class="menu__contenair-responsive">
+                                <div class="carte">
+                                    <div class="carte__texte">
+                                        <h4>Fricassée d'escargot</h4>
+                                        <p>Au piment d'Espelette</p>
+                                    </div>
+                                    <p class="carte__prix">25€</p>
+                                    <div class="carte__check">
+                                        <div class="carte__icon-container">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carte">
+                                    <div class="carte__texte">
+                                        <h4>Foie gras de canard mi-cuit</h4>
+                                        <p>Et ses copeaux de truffe noire</p>
+                                    </div>
+                                    <p class="carte__prix">35€</p>
+                                    <div class="carte__check">
+                                        <div class="carte__icone-container">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carte">
+                                    <div class="carte__texte">
+                                        <h4>Oeuf au plat</h4>
+                                        <p>Assaisonné à la truffe sur lit de caviar</p>
+                                    </div>
+                                    <p class="carte__prix">20€</p>
+                                    <div class="carte__check">
+                                        <div class="carte__icone-container">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="carte">
-                        <div class="carte__texte">
-                            <h4>Foie gras de canard mi-cuit</h4>
-                            <p>Et ses copeaux de truffe noire</p>
+                    <!-- SECTION PLATS -->
+
+                    <div class="menu__part">
+                        <h3 class="menu__title__mid">PLATS</h3>
+                        <div class="carte">
+                            <div class="carte__texte">
+                                <h4>Filet de boeuf aux herbes</h4>
+                                <p>Accompagné de sa ribambelle de légumes</p>
+                            </div>
+                            <p class="carte__prix">40€</p>
+                            <div class="carte__check">
+                                <div class="carte__icone-container">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
                         </div>
-                        <p class="carte__prix">35€</p>
-                        <div class="carte__check">
-                            <div class="carte__icone-container">
-                                <i class="fas fa-check-circle"></i>
+                        <div class="carte">
+                            <div class="carte__texte">
+                                <h4>Parmentier de queue de boeuf</h4>
+                                <p>À la truffe noire sur sa purée de panais</p>
+                            </div>
+                            <p class="carte__prix">35€</p>
+                            <div class="carte__check">
+                                <div class="carte__icone-container">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carte">
+                            <div class="carte__texte">
+                                <h4>Filet de turbot</h4>
+                                <p>Aux agrumes</p>
+                            </div>
+                            <p class="carte__prix">44€</p>
+                            <div class="carte__check">
+                                <div class="carte__icone-container">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- SECTION DESSERTS -->
 
-
-                    <div class="carte">
-                        <div class="carte__texte">
-                            <h4>Oeuf au plat</h4>
-                            <p>Assaisonné à la truffe sur lit de caviar</p>
+                    <div class="menu__part">
+                        <h3 class="menu__title__mid">DESSERTS</h3>
+                        <div class="carte">
+                            <div class="carte__texte">
+                                <h4>Paris-Brest</h4>
+                                <p>Revisité</p>
+                            </div>
+                            <p class="carte__prix">18€</p>
+                            <div class="carte__check">
+                                <div class="carte__icone-container">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
                         </div>
-                        <p class="carte__prix">20€</p>
-                        <div class="carte__check">
-                            <div class="carte__icone-container">
-                                <i class="fas fa-check-circle"></i>
+                        <div class="carte">
+                            <div class="carte__texte">
+                                <h4>Macaron au chocolat d'exception</h4>
+                                <p>Et glace à la vanille de Madagascar</p>
+                            </div>
+                            <p class="carte__prix">22€</p>
+                            <div class="carte__check">
+                                <div class="carte__icone-container">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carte">
+                            <div class="carte__texte">
+                                <h4>Mousse au chocolat</h4>
+                                <p>Au piment d'Espelette et à la truffe noire</p>
+                            </div>
+                            <p class="carte__prix">23€</p>
+                            <div class="carte__check">
+                                <div class="carte__icone-container">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <!-- SECTION PLATS -->
-
-
-                <h3 class="menu__title__mid">PLATS</h3>
-                <div class="carte">
-                    <div class="carte__texte">
-                        <h4>Filet de boeuf aux herbes</h4>
-                        <p>Accompagné de sa ribambelle de légumes</p>
-                    </div>
-                    <p class="carte__prix">40€</p>
-                    <div class="carte__check">
-                        <div class="carte__icone-container">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="carte">
-                    <div class="carte__texte">
-                        <h4>Parmentier de queue de boeuf</h4>
-                        <p>À la truffe noire sur sa purée de panais</p>
-                    </div>
-                    <p class="carte__prix">35€</p>
-                    <div class="carte__check">
-                        <div class="carte__icone-container">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carte">
-                    <div class="carte__texte">
-                        <h4>Filet de turbot</h4>
-                        <p>Aux agrumes</p>
-                    </div>
-                    <p class="carte__prix">44€</p>
-                    <div class="carte__check">
-                        <div class="carte__icone-container">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-            <!-- SECTION DESSERTS -->
-
-
-            <h3 class="menu__title__mid">DESSERTS</h3>
-            <div class="carte">
-                <div class="carte__texte">
-                    <h4>Paris-Brest</h4>
-                    <p>Revisité</p>
-                </div>
-                <p class="carte__prix">18€</p>
-                <div class="carte__check">
-                    <div class="carte__icone-container">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carte">
-                <div class="carte__texte">
-                    <h4>Macaron au chocolat d'exception</h4>
-                    <p>Et glace à la vanille de Madagascar</p>
-                </div>
-                <p class="carte__prix">22€</p>
-                <div class="carte__check">
-                    <div class="carte__icone-container">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carte">
-                <div class="carte__texte">
-                    <h4>Mousse au chocolat</h4>
-                    <p>Au piment d'Espelette et à la truffe noire</p>
-                </div>
-                <p class="carte__prix">23€</p>
-                <div class="carte__check">
-                    <div class="carte__icone-container">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
 
@@ -195,25 +193,26 @@
     <!-- FOOTER-->
 
     <footer class="footer__background">
-        <div>
+        <div class="footer__max-container">
             <h3 class="footer__logo">ohmyfood</h3>
             <div class="footer__container">
                 <div class="footer__white">
-                    <i class="fas fa-utensils"></i>
+                    <i class="fas fa-utensils footer__icone"></i>
                     <h3 class="footer__text-res">Proposer un restaurant</h3>
                 </div>
                 <div class="footer__white">
-                    <i class="fas fa-hands-helping"></i>
+                    <i class="fas fa-hands-helping footer__icone"></i>
                     <h3 class="footer__text-par">Devenir partenaire</h3>
                 </div>
                 <div>
                     <h3 class="footer__white">Mentions légales</h3>
+                </div>
+                <div>
                     <h3><a href="mailto:ohmyfood@mail.com" class="footer__white">contact</a></h3>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
