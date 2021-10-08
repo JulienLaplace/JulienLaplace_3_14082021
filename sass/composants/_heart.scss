@@ -2,14 +2,13 @@
     float: right;
     padding-right: 30px;
     position: relative;
-    -webkit-text-stroke: 1.5px white;
     cursor:pointer;
+    font-weight:lighter;
 
     &:hover {
         background: linear-gradient($primary-color, $secondary-color);
-        background-clip:text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 0px white;
+        -webkit-background-clip:text;
+        color: transparent;
     }
     
     &:hover .heart-color {
@@ -22,10 +21,9 @@
         left: 0;
         top: 0;
         background: linear-gradient(#9356DC, #FF79DA);
-        background-clip: text;
+        -webkit-background-clip: text;
         opacity: 0;
         transform: scale(0);
-        //@include animation(coeur, 1.5s, $fill-mode:forwards);
         @include transition(all, 0.7s);
     }
 } 
@@ -33,16 +31,14 @@
 .heart {
     float: right;
     position: relative;
-    -webkit-text-stroke: 2px white;
     cursor:pointer;
     padding-top: 5px;
     padding-bottom: 3px;
 
     &:hover {
         background: linear-gradient($primary-color, $secondary-color);
-        background-clip:text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 0px white;
+        -webkit-background-clip:text;
+        color: transparent;
     }
     
     &:hover .heart-color {
@@ -55,10 +51,9 @@
         left: 0;
         top: 0;
         background: linear-gradient(#9356DC, #FF79DA);
-        background-clip: text;
+        -webkit-background-clip: text;
         opacity: 0;
         transform: scale(0);
-        //@include animation(coeur, 1.5s, $fill-mode:forwards);
         @include transition(all, 0.5s)
     }
 } 
