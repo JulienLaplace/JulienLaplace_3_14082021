@@ -1,200 +1,155 @@
-<!DOCTYPE html>
-<html lang="fr">
+// SECTION LIEU
 
-<head>
-    <meta charset="utf-8" />
-    <title>Oh My Food</title>
-    <link rel="stylesheet" href="public/css/style.css" />
-    <link rel="stylesheet" href="css/prefixed/style.css" />
-    <!-- POLICE RALEWAY-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <!-- POLICE SHRIKAND -->
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <!-- RESPONSIVE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+.lieu {
+    &__container {
+        height: 50px;
+        background: #ece7e7;
+        display: flex;
+        justify-content: center;
+        box-shadow: $box-shadow-inset;
+    }
 
-<body>
+    &__map {
+        padding-top: 15px;
+        display: flex;
+        color: grey;
+        font-weight: $font-regular;
+    }
 
-    <div class="loader">
-        <div class="loader__container">
-            <div class="loader__objet">ohmyfood</div>
-        </div>
-    </div>
+    &__texte {
+        padding-left:10px;
+    }
+}
 
-    <!-- HEADER -->
+// SECTION EXPLORER
 
-    <header>
-        <div class="header">
-            <img class="header__logo" src="img/logo/omf.png" alt="logo" />
-        </div>
-    </header>
+.explore__container {
+    @include section-container (30px, 30px, 30px, 30px);
+}
 
-    <!-- SECTION LIEU -->
+.explore {
+    text-align: center;
+}
 
-    <div class="lieu">
-        <div class="lieu__container">
-            <div class="lieu__map">
-                <i class="fas fa-map-marker-alt"></i>
-                <p class="lieu__texte">Paris, Belleville</p>
-            </div>
-        </div>
-    </div>
+.light {
+    font-weight: $font-light;
+}
 
-    <!-- SECTION EXPLORER-->
+.button {
+    background: linear-gradient(-7deg, $primary-color, $secondary-color);
+}
 
-    <section class="explore__container">
-        <div class="explore">
-            <h1>
-                Réservez le menu qui vous convient
-            </h1>
-            <h3 class="light">
-                Découvrez des restaurants d'exception, séléctionnés par nos soins
-            </h3>
-        </div>
-        <div class="explore__container-button">
-            <button class="explore__button">
-                Explorer nos restaurants
-            </button>
-        </div>
-    </section>
 
-    <!-- SECTION FONCTIONNEMENT-->
+// SECTION FONCTIONNEMENT
 
-    <main class="fon__max-container">
-        <h2 class="fon__titre">Fonctionnement</h2>
-        <div class="fon__container">
-            <div class="fon__container-button">
-                <div class="pad-left-10"></div>
-                <div class="fon__rond">1</div>
-                <div class="fon__button">
-                    <i class="fas fa-mobile-alt fa-lg fon__icone"></i>
-                    <p class="fon__texte">Choisissez un restaurant</p>
-                </div>
-            </div>
-            <div class="fon__container-button">
-                <div class="pad-left-10"></div>
-                <div class="fon__rond">2</div>
-                <div class="fon__button">
-                    <i class="fas fa-list-ul fa-lg fon__icone"></i>
-                    <p class="fon__texte">Composez votre menu</p>
-                </div>
-            </div>
-            <div class="fon__container-button">
-                <div class="pad-left-10"></div>
-                <div class="fon__rond">3</div>
-                <div class="fon__button">
-                    <i class="fas fa-store fa-lg fon__icone"></i>
-                    <p class="fon__texte">Dégustez au restaurant</p>
-                </div>
-            </div>
-        </div>
-    </main>
+.fon {
 
-    <!-- SECTION RESTAURANT -->
+    &__max-container {
+        max-width: 1400px;
+        margin: auto;
+    }
 
-    <aside class="restaurant">
-        <div class="restaurant__max-container">
-            <h2 class="restaurant__titre">Restaurants</h2>
-            <div class="restaurant__background">
-                <div class="restaurant__container">
-                    <div class="carte-restaurant">
-                        <a href="menu-gout.html">
-                            <div class="carte-restaurant__container-rect">
-                                <div class="carte-restaurant__rect">
-                                    Nouveau
-                                </div>
-                            </div>
-                            <img class="carte-restaurant__img" src="img/image1.jpg" alt="ménilmontant">
-                            <h3 class="carte-restaurant__texte">La palette du goût</h3>
-                            <i class="far fa-heart heart-index fa-2x ">
-                                <i class="fas fa-heart heart-color"></i>
-                            </i>
-                            <p class="carte-restaurant__texte">
-                                Ménilmontant
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="restaurant__container">
-                    <div class="carte-restaurant">
-                        <a href="menu-note.html">
-                            <div class="carte-restaurant__container-rect">
-                                <div class="carte-restaurant__rect">
-                                    Nouveau
-                                </div>
-                            </div>
-                            <img class="carte-restaurant__img" src="img/image2.jpg" alt="charonne">
-                            <h3 class="carte-restaurant__texte">La note enchantée</h3>
-                            <i class="far fa-heart heart-index fa-2x ">
-                                <i class="fas fa-heart heart-color"></i>
-                            </i>
-                            <p class="carte-restaurant__texte">
-                                Charonne
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="restaurant__container">
-                    <div class="carte-restaurant">
-                        <a href="menu-french.html">
-                            <img class="carte-restaurant__img" src="img/image3.jpg" alt="cité rouge">
-                            <h3 class="carte-restaurant__texte">À la française</h3>
-                            <i class="far fa-heart heart-index fa-2x ">
-                                <i class="fas fa-heart heart-color"></i>
-                            </i>
-                            <p class="carte-restaurant__texte">
-                                Cité Rouge
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="restaurant__container">
-                    <div class="carte-restaurant">
-                        <a href="menu-sens.html">
-                            <img class="carte-restaurant__img" src="img/image4.jpg" alt="méricourt">
-                            <h3 class="carte-restaurant__texte">Le délice des sens</h3>
-                            <i class="far fa-heart heart-index fa-2x ">
-                                <i class="fas fa-heart heart-color"></i>
-                            </i>
-                            <p class="carte-restaurant__texte">
-                                Folie-Méricourt
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </aside>
+    &__container {
+        @include section-container (30px, 30px, 30px, 30px);
+        
+    }
+    
+    &__titre {
+        padding-left:30px;
+    }
 
-    <!-- FOOTER-->
+    &__container-button {
+        display: flex;
+        align-items: center;
+        height: 90px;
+        padding-bottom: 20px;
+    }
 
-    <footer class="footer__background">
-        <div class="footer__max-container">
-            <h3 class="footer__logo">ohmyfood</h3>
-            <div class="footer__container">
-                <div class="footer__white">
-                    <i class="fas fa-utensils footer__icone"></i>
-                    <h3 class="footer__text-res">Proposer un restaurant</h3>
-                </div>
-                <div class="footer__white">
-                    <i class="fas fa-hands-helping footer__icone"></i>
-                    <h3 class="footer__text-par">Devenir partenaire</h3>
-                </div>
-                <div>
-                    <h3 class="footer__white">Mentions légales</h3>
-                </div>
-                <div>
-                    <h3><a href="mailto:ohmyfood@mail.com" class="footer__white">contact</a></h3>
-                </div>
-            </div>
-        </div>
-    </footer>
+    &__rond {
+        z-index: 1;
+        display: flex;
+        height: 25px;
+        width: 25px;
+        margin-left: -10px;
+        color: white;
+        background-color: $primary-color;
+        align-items: center;
+        border-radius:$border-radius-max;
+        justify-content: center;
+        position: absolute;
+    }
 
-    <!-- FONT AWESOME-->
-    <script src="https://kit.fontawesome.com/884426581f.js" crossorigin="anonymous"></script>
-</body>
-</html>
+    &__button {
+        z-index: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        padding-left: 30px;
+        background-color: #f6f6f6;
+        box-shadow: 5px 5px 15px -5px #aaa;
+        border-radius: $border-radius-med;
+        font-size: $font-size-min;
+        font-weight: $font-bold;
+        cursor: pointer;
+        @include transition(background-color);  
+    }
+    
+    &__button:hover {
+        box-shadow: 0 5px 15px #787878;
+        background-color: #9256dc2c;
+
+        .fon__icone {
+            color: $primary-color;
+        }
+    }
+
+    &:hover {
+        box-shadow: $box-shadow-hover;
+    }
+
+    &__texte {
+        padding-left:10px;
+    }
+
+    &__icone {
+        color:grey;
+    }
+}
+
+
+// SECTION RESTAURANT 
+
+.restaurant { 
+    background-color: #F2F2F2;
+    padding-bottom: 30px;
+
+    &__max-container {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    &__background {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+        padding-bottom: 30px;
+        
+    }
+
+    &__titre {
+        @include section-container (30px, 30px, 0px, 30px);
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
