@@ -988,22 +988,6 @@ footer {
   height: 300px;
 }
 
-.gout {
-  background-image: url("../../img/image1.jpg");
-}
-
-.note {
-  background-image: url("../../img/image2.jpg");
-}
-
-.french {
-  background-image: url("../../img/image3.jpg");
-}
-
-.sens {
-  background-image: url("../../img/image4.jpg");
-}
-
 .menu {
   background-color: #F2F2F2;
   margin-top: -50px;
