@@ -57,3 +57,7 @@ Police
 
 - Logo et titres: Shrikhand
 - Texte: Roboto
+
+![Accueil](https://user-images.githubusercontent.com/77047377/136755884-4a832cf6-f876-4217-a4de-eb2ef98f3994.png) 
+  ![Menu - À la française](https://user-images.githubusercontent.com/77047377/136755914-49db99d6-70ca-4d36-8664-9e8053b97f75.png)
+
